@@ -12,7 +12,7 @@ pipeline {
         stage('run') {
             steps {
                 echo 'Running build automation'
-                sh './gradlew bootRun'
+                sh './gradlew bootRun --no-daemon'
                 
             }
         }
