@@ -2,10 +2,10 @@ pipeline {
     agent any
     stages {
         
-        stage('Build') {
+        stage('run') {
             steps {
                 echo 'Running build automation'
-                sh './gradlew build --no-daemon'
+                sh './gradlew bootRun'
                 
             }
         }
